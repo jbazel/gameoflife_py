@@ -1,5 +1,5 @@
 import numpy as np
-import tkinter as tk
+import pygame
 import time
 
 
@@ -40,15 +40,11 @@ def update(matrix):
 
 
 def main(n, m):
-    root = tk.Tk()
-    canvas = tk.Canvas(root)
-    canvas.pack()
+
 
     def draw(matrix):
 
-
         SIZE = 10
-        n, m = np.shape(matrix)
 
         for i in range(n):
             for j in range(m):
